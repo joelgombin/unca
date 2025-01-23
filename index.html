@@ -1,40 +1,45 @@
----
-title: "L'open data en France"
-subtitle: "Master 2 DROIT ALGORITHMIQUE ET GOUVERNANCE DES DONNÉES"
-author: "Joël Gombin"
-date: "`r format(Sys.Date(), '%d %b %Y')`"
-output:
-  SlidesDatactivist::moon_reader:
-    css: [default, datactivist, datactivist-fonts]
-    lib_dir: libs
-    nature:
-      highlightStyle: github
-      highlightLines: true
-      countIncrementalSlides: false
-params:
-  event: L'open data en France
-  slug: unca
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>L’open data en France</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Joël Gombin" />
+    <meta name="date" content="2025-01-23" />
+    <script src="libs/header-attrs-2.29/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# L’open data en France
+## Master 2 DROIT ALGORITHMIQUE ET GOUVERNANCE DES DONNÉES
+### Joël Gombin
+### 23 Jan 2025
 
 ---
+
 layout: true
   
 
-`r paste0("<div class='my-footer'><span>", params$event, "</span> <center><div class=logo><img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='0px'></center></span></div>")` 
+&lt;div class='my-footer'&gt;&lt;span&gt;L'open data en France&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='0px'&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
 
 
 ---
 
 class: center, middle
 
-Ces slides en ligne : `r paste0("http://joelgombin.github.io/", params$slug)`
+Ces slides en ligne : http://joelgombin.github.io/unca
 
-Sources : `r paste0("https://github.com/joelgombin/", params$slug)`
+Sources : https://github.com/joelgombin/unca
 
 
 Ce support de cours, largement nourri de productions de [Datactivist](open.datactivist.coop), est librement réutilisable selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
 
-<BR>
-<BR>
+&lt;BR&gt;
+&lt;BR&gt;
 
 .reduite[![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)]
 
@@ -88,7 +93,7 @@ class: inverse, center, middle
 
 ⏺ enregistrabilité +🏗 briques de base ("*buildings blocks*")]]
 .pull-right[
-> *Data are commonly understood to be the raw material produced by **abstracting the world** into categories, measures and other representational forms – numbers, characters, symbols, images,sounds, electromagnetic waves, bits – that constitute the **building blocks** from which information and knowledge are created.*]
+&gt; *Data are commonly understood to be the raw material produced by **abstracting the world** into categories, measures and other representational forms – numbers, characters, symbols, images,sounds, electromagnetic waves, bits – that constitute the **building blocks** from which information and knowledge are created.*]
 
 
 ---
@@ -116,7 +121,7 @@ class: inverse, center, middle
 ---
 ## Open data : quelques jalons historiques
 ![](img/chrono.png)
-[(Autre version, plus détaillée)](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1V00vQN4c23p_Z0EUOsedYAs4-Z37GNskVafUYhQ_v4Q&font=Default&lang=fr&hash_bookmark=true&initial_zoom=5&height=650#event-archives-et-open-data)
+[(Autre version, plus détaillée)](https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1V00vQN4c23p_Z0EUOsedYAs4-Z37GNskVafUYhQ_v4Q&amp;font=Default&amp;lang=fr&amp;hash_bookmark=true&amp;initial_zoom=5&amp;height=650#event-archives-et-open-data)
 
 ---
 
@@ -269,7 +274,7 @@ L’ouverture est enfin une injonction adressée aux détenteurs de données, ta
 
 ---
 class: middle
-<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3FdateOfBirth%0AWHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22.%20%7D%0A%20%20%3Fitem%20p%3AP69%20%3Fstatement0.%0A%20%20%3Fstatement0%20(ps%3AP69%2F(wdt%3AP279*))%20wd%3AQ19370961.%0A%20%20%3Fitem%20wdt%3AP569%20%3FdateOfBirth.%0A%7D%0AORDER%20BY%20DESC(%3FdateOfBirth)%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+&lt;iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#SELECT%20DISTINCT%20%3Fitem%20%3FitemLabel%20%3FitemDescription%20%3FdateOfBirth%0AWHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%22.%20%7D%0A%20%20%3Fitem%20p%3AP69%20%3Fstatement0.%0A%20%20%3Fstatement0%20(ps%3AP69%2F(wdt%3AP279*))%20wd%3AQ19370961.%0A%20%20%3Fitem%20wdt%3AP569%20%3FdateOfBirth.%0A%7D%0AORDER%20BY%20DESC(%3FdateOfBirth)%0ALIMIT%20100" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"&gt;&lt;/iframe&gt;
 ---
 
 ### 2011 : [la déclaration pour un gouvernement ouvert](https://www.opengovpartnership.org/fr/process/joining-ogp/open-government-declaration/)
@@ -278,11 +283,11 @@ class: middle
 
 ---
 ## Des principes techniques sans portée politique
->"Il peut être vrai en un sens qu'un régime devient plus ouvert chaque fois qu'il fournit des données ouvertes supplémentaires, même pour les sujets banals et apolitiques, mais il est facile d'imaginer qu'un régime fermé pourrait divulguer de grandes quantités de données conformes à ces huit exigences [de Sébastopol] **sans pour autant accroître sa responsabilité réelle en tant que gouvernement **. 
+&gt;"Il peut être vrai en un sens qu'un régime devient plus ouvert chaque fois qu'il fournit des données ouvertes supplémentaires, même pour les sujets banals et apolitiques, mais il est facile d'imaginer qu'un régime fermé pourrait divulguer de grandes quantités de données conformes à ces huit exigences [de Sébastopol] **sans pour autant accroître sa responsabilité réelle en tant que gouvernement **. 
 
-> Une diffusion électronique des déclarations de propagande faites par les dirigeants politiques de la Corée du Nord, par exemple, pourrait satisfaire à ces huit exigences et ne pas promouvoir une transparence ou une responsabilité supplémentaires de la part d'un régime notoirement fermé et opaque."
+&gt; Une diffusion électronique des déclarations de propagande faites par les dirigeants politiques de la Corée du Nord, par exemple, pourrait satisfaire à ces huit exigences et ne pas promouvoir une transparence ou une responsabilité supplémentaires de la part d'un régime notoirement fermé et opaque."
 
->Yu & Robinson (2012) « [The New Ambiguity of Open Government](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2012489) » 
+&gt;Yu &amp; Robinson (2012) « [The New Ambiguity of Open Government](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2012489) » 
 
 
 ---
@@ -291,7 +296,7 @@ class: middle
 
 ???
 
-"https://opendatabarometer.org/?_year=2017&indicator=ODB
+"https://opendatabarometer.org/?_year=2017&amp;indicator=ODB
 Evalue comment les Etats publient et utilisent les données ouvertes pour la reddition de compte, l'innovation l'impact social."
 
 ---
@@ -362,7 +367,7 @@ Ce guide a été élargi en 2024 par des [éléments plus précis sur l'ouvertur
 
 * La France était le .red[3e pays au monde] après la Suède en 1766 et les Etats-Unis en 1966 avec le Freedom of Information Act (FOIA) en 1966  à accorder un "droit de savoir" avec pour but d'améliorer les relations entre le public et l'administration.
 
-.footnote[Il faudrait maintenant désigner la loi comme le Code des relations entre le public et l'administration (CRPA) qui, dans son [livre 3](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=BDF8EC0BD562E214CCD9A5ADD435D690.tplgfr42s_1?idSectionTA=LEGISCTA000031367685&cidTexte=LEGITEXT000031366350&dateTexte=20190429), codifie le droit d'accès et de réutilisation mais il est encore moins connu que la loi CADA…]
+.footnote[Il faudrait maintenant désigner la loi comme le Code des relations entre le public et l'administration (CRPA) qui, dans son [livre 3](https://www.legifrance.gouv.fr/affichCode.do;jsessionid=BDF8EC0BD562E214CCD9A5ADD435D690.tplgfr42s_1?idSectionTA=LEGISCTA000031367685&amp;cidTexte=LEGITEXT000031366350&amp;dateTexte=20190429), codifie le droit d'accès et de réutilisation mais il est encore moins connu que la loi CADA…]
 
 ???
 
@@ -373,9 +378,9 @@ Aux Etats-Unis, après le Freedom of Information Act de 1966 oblige les agences 
 
 Même si la France est le 3e pays à avoir adopté un droit d'accès, la loi CADA n'est pas un outil fort de la transparence de la vie publique. Ses principaux défauts : l'absence de sanctions et une procédure longue qui décourage les demandeurs et favorise le contournement par les administrations. 
 
-<BR>
+&lt;BR&gt;
 
-[![](./img/europam.png)](http://europam.eu/?module=country-profile&country=France)
+[![](./img/europam.png)](http://europam.eu/?module=country-profile&amp;country=France)
 
 ---
 ### Un droit d'accès très faible au regard des standards internationaux
@@ -399,10 +404,10 @@ La notation RTI (Rght to information) est le principal outil mondial pour évalu
 ### Les conditions d'exercice du droit d'accès
 
 .red[ Une définition très large des documents administratifs]
-> Les documents administratifs peuvent revêtir de nombreuses formes (dossiers, rapports, études, comptes rendus, procès-verbaux, statistiques, directives, instructions, circulaires, codes sources, etc.) et adopter tout support (écrit, enregistrement sonore ou visuel, forme numérique ou informatique). 
+&gt; Les documents administratifs peuvent revêtir de nombreuses formes (dossiers, rapports, études, comptes rendus, procès-verbaux, statistiques, directives, instructions, circulaires, codes sources, etc.) et adopter tout support (écrit, enregistrement sonore ou visuel, forme numérique ou informatique). 
 
 Le droit d'accès s'appplique aux documents administratifs produits dans le cadre d'une .red[mission de service public] ie :
-> Une mission d'intérêt général sous le contrôle de l'administration et qui est dotée à cette fin de prérogatives de puissance publique est chargée de l'exécution d'un service public. 
+&gt; Une mission d'intérêt général sous le contrôle de l'administration et qui est dotée à cette fin de prérogatives de puissance publique est chargée de l'exécution d'un service public. 
 
 Il ne s’exerce que si l’administration a effectivement en sa possession le document demandé, que si le document est formellement **achevé**, qu'il existe et qu'il n'est pas **préparatoire à une décision administrative** en cours. 
 
@@ -433,7 +438,7 @@ La prohibition de la communication à des tiers ne porte pas sur les données pe
 La mise en ligne de données à caractère personnel sans anonymisation n'est permise que dans .red[**trois cas**] :
 1. une disposition législative contraire le prévoit (exemple : [Transparence Santé](https://www.data.gouv.fr/fr/datasets/transparence-sante-1/))
 2. si les personnes intéressées ont donné leur accord (consentement au sens de l’article 4 du RGPD)
-3. les documents relevant de [l’article D312-3-1 du CRPA](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=51E99AF738C12521572D6A7F6C8C03E8.tplgfr23s_1?cidTexte=JORFTEXT000037797147&dateTexte=&oldAction=rechJO&categorieLien=id&idJO=JORFCONT000037796937)
+3. les documents relevant de [l’article D312-3-1 du CRPA](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=51E99AF738C12521572D6A7F6C8C03E8.tplgfr23s_1?cidTexte=JORFTEXT000037797147&amp;dateTexte=&amp;oldAction=rechJO&amp;categorieLien=id&amp;idJO=JORFCONT000037796937)
 
 
 Hors de ces cas, il faut .red[**[anonymiser les données](https://github.com/SGMAP-AGD/anonymisation/wiki/Guide-de-l'anonymisation)**] : elles ne doivent plus se référer à une personne réelle (exit les noms, identifiants…) et ne doivent plus être spécifiques à un individu mais communes à un ensemble de personnes. L’indexation de ces données par un moteur de recherche externe est proscrite.
@@ -454,8 +459,8 @@ class: center, middle
 
 ### Loi pour une République Numérique : l'ouverture des données par défaut
 
-<img style="float: right;margin:10px" src="./img/repnum.jpg">
-Promulguée le 7 octobre 2016, après 4 ans d'annonces et de consultation, le titre 1 de la [loi pour une République  Numérique](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=B5632993E54F7CCC2606664B64CDF612.tpdila11v_1?cidTexte=JORFTEXT000033202746&categorieLien=id) porte sur l'ouverture des données publiques. 
+&lt;img style="float: right;margin:10px" src="./img/repnum.jpg"&gt;
+Promulguée le 7 octobre 2016, après 4 ans d'annonces et de consultation, le titre 1 de la [loi pour une République  Numérique](https://www.legifrance.gouv.fr/affichTexte.do;jsessionid=B5632993E54F7CCC2606664B64CDF612.tpdila11v_1?cidTexte=JORFTEXT000033202746&amp;categorieLien=id) porte sur l'ouverture des données publiques. 
 
 La loi impose un principe d'.red[**ouverture des données par principe**] qui ne fait pas l'objet de sanctions à toutes les administrations, les entreprises délégataires d'une mission de service public et les .red[**collectivités locales de plus de 3500 habitants et 50 agents**]. 
 
@@ -471,17 +476,17 @@ Rares sont donc les données publiques qui ne sont pas concernées par cette obl
 
 Le guide CADA-CNIL rappelle la **définition des "bases de données"**
 
-> On entend par base de données un recueil d'œuvres, de données ou d'autres éléments indépendants, disposés de manière systématique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autre moyen (art L112-3 du code de la propriété intellectuelle)
+&gt; On entend par base de données un recueil d'œuvres, de données ou d'autres éléments indépendants, disposés de manière systématique ou méthodique, et individuellement accessibles par des moyens électroniques ou par tout autre moyen (art L112-3 du code de la propriété intellectuelle)
 
-> En d’autres termes il s’agit d’un ensemble de données organisé en vue de son utilisation par des programmes correspondant à des applications distinctes et de manière à faciliter l'évolution indépendante des données et des programmes (en anglais : data base)
+&gt; En d’autres termes il s’agit d’un ensemble de données organisé en vue de son utilisation par des programmes correspondant à des applications distinctes et de manière à faciliter l'évolution indépendante des données et des programmes (en anglais : data base)
 
 Le document donne également une **définition de ce qu'est une "donnée"** :
 
-> Une donnée correspond à la représentation d'une information sous une forme conventionnelle destinée à faciliter son traitement (en anglais : data).
+&gt; Une donnée correspond à la représentation d'une information sous une forme conventionnelle destinée à faciliter son traitement (en anglais : data).
 
 ---
 ### Loi pour une République numérique : l'utilisation de standards ouverts
-<img style="float:right; margin:10px"  src="./img/openstand.png">
+&lt;img style="float:right; margin:10px"  src="./img/openstand.png"&gt;
 
 Afin de faciliter la réutilisation des données par les machines, la loi pour une République Numérique consacre **l'utilisation de standards ouverts** pour la communication des documents administratifs. 
 
@@ -556,7 +561,7 @@ Publié par le ministère de la Culture, juillet 2019
 
 * [**Retour d'expérience sur la mise en ligne des collections du musée de Bretagne**](https://musee-devoile.blog/wp-content/uploads/2021/05/fiches_juridiques_musee_de_bretagne.pdf)
 
-* [**Penser demain, L’Open Innovation dans les Musées & Institutions Culturelles**](https://www.icart.fr/actualites/elaboration-dun-livre-blanc-sur-lopen-innovation), l'ICART 
+* [**Penser demain, L’Open Innovation dans les Musées &amp; Institutions Culturelles**](https://www.icart.fr/actualites/elaboration-dun-livre-blanc-sur-lopen-innovation), l'ICART 
 
 * [**Guide pratique pour la recherche et la réutilisation des images d’œuvres d’art**](https://www.inha.fr/fr/actualites/actualites-de-l-inha/en-2021/guide-pratique-pour-la-recherche-et-la-reutilisation-des-images-d-uvres-d-art.html), INHA
 
@@ -570,3 +575,94 @@ class: inverse, center, middle
 # Merci !
 
 Contact : [joel.gombin@gmail.com](mailto:joel.gombin@gmail.com)
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
